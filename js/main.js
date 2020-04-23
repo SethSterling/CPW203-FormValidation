@@ -6,6 +6,9 @@ function main() {
     resetErrorMessages();
     isTextPresent("first-name", "First Name is required");
     isTextPresent("last-name", "Last Name is required");
+    checkValidDate();
+}
+function checkValidDate() {
     var dobBox = document.getElementById("dob");
     var dob = dobBox.value;
     if (!isValidateDate(dob)) {
