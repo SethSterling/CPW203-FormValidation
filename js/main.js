@@ -6,6 +6,16 @@ function main() {
     resetErrorMessages();
     isTextPresent("first-name", "First Name is required");
     isTextPresent("last-name", "Last Name is required");
+    var dobBox = document.getElementById("dob");
+    var dob = dobBox.value;
+    if (!isValidateDate(dob)) {
+        var errSpan = dobBox.nextElementSibling;
+        errSpan.innerHTML = "mm/dd/yyyy";
+    }
+}
+function isValidateDate(input) {
+    var pattern = /^\d{1,2}\/\d{1,2}\/\d{4}$/g;
+    return pattern.test(input);
 }
 function isTextPresent(id, errMsg) {
     var txtBox = document.getElementById(id);
