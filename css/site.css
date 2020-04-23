@@ -6,6 +6,11 @@ h1{
     text-align: center;
 }
 
+.message{
+    font-style: italic;
+    margin-left: 50%;
+}
+
 button{
     padding: .5em;
     border-radius: .3;
