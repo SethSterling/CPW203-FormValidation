@@ -2,6 +2,22 @@ form span{
     color: red;
 }
 
+h1{
+    text-align: center;
+}
+
+button{
+    padding: .5em;
+    border-radius: .3;
+    color: green;
+    background-color: rgb(255, 0, 208);
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: red;
+}
+
 input[type=text]{
     margin-bottom: 1em;
 }
@@ -9,12 +25,12 @@ input[type=text]{
 form label{
     display: inline-block;
     text-align: right;
-    width: 15%;
+    width: 50%;
     margin-right: 2em;
 }
 
 form button{
-    margin-left: 20%;
+    margin-left: 30%;
 }
 
 @media only screen and (max-width: 450px){
